@@ -93,7 +93,7 @@ func (c *Connection) readPkg() (pkg, error) {
 	if rdr.err != nil {
 		return p, rdr.err
 	}
-	p.Body = body[:read-12]
+	p.Body = body[:read-14]
 	return p, nil
 }
 
